@@ -1,11 +1,10 @@
 ﻿using Memento;
 
-Console.WriteLine( "Memento Behavioural Design Pattern example" );
-Console.WriteLine();
+Console.WriteLine( "Memento Behavioural Design Pattern example\n" );
 
 Console.WriteLine("Playing a chess game:\n");
 GameProgress progress = new( );
-ChessGame game = new ChessGame(progress);
+ChessGame game = new(progress);
 
 game.MakeMove(Colour.White, "d4");
 game.MakeMove(Colour.Black, "Nf6");
